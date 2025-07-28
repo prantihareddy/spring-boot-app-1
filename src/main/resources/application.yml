@@ -1,0 +1,25 @@
+datadump.location:
+  author:/Users/donthis/JavaProjects/authorandwork_datadump/test-authors.txt
+  works:/Users/donthis/JavaProjects/authorandwork_datadump/test-works.txt
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: goodreadsdataloader
+      schema-action: CREATE_IF_NOT_EXISTS
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+      username: token
+      password: AstraCS:FKJxhllNLGGRFKGslbBorRhE:b23f78da1313f92068a7d0fc7dfd9da66b79431ad3e411603365f20728ec6e09
+datastax:
+  astra:
+    secure-connect-bundle: classpath:secure-connect-dataloader.zip
+logging:
+  level:
+    com.datastax.oss.driver: DEBUG
+    org.springframework.data.cassandra: DEBUG
+    org.springframework.data.cassandra.core.mapping: TRACE
+    org.springframework.data.cassandra.core: TRACE
