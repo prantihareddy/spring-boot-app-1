@@ -47,6 +47,7 @@ public class DataLoaderService implements CommandLineRunner {
         } catch (Exception e) {
             System.err.println("Error in CommandLineRunner: " + e.getMessage());
             e.printStackTrace();
+
             throw e;
         }
     }

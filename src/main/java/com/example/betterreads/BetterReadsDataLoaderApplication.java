@@ -41,8 +41,8 @@ public class BetterReadsDataLoaderApplication {
 				//Read and parse the line
 				String jsonString=line.substring(line.indexOf("{"));
 				//JSONWrappedObject jsonoObject=new JSONPObject(jsonString)
-				JsonNode node =
-						JSONPObject 
+				//JsonNode node =
+				//		JSONPObject ;
 				//construct Author object
 				//persist using Repository
 			});
